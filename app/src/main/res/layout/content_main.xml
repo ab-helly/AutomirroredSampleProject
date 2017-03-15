@@ -9,12 +9,26 @@
     tools:showIn="@layout/activity_main">
 
     <ImageView
+        android:id="@+id/working_image_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_action_sample_i18n"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:drawableTop="@drawable/ic_action_sample_ripple"
+        android:drawableBottom="@drawable/ic_action_sample_ripple"
+        android:drawableStart="@drawable/ic_action_sample_ripple"
+        android:drawableEnd="@drawable/ic_action_sample_ripple"
+        android:gravity="center_vertical"
+        android:text="Compound drawable"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/working_image_view" />
 
 </android.support.constraint.ConstraintLayout>
